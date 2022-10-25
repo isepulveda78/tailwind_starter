@@ -5,10 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
     <title>Typography</title>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['ui-sans-serif', 'system-ui'],
+            serif: ['Tapestry', 'Georgia'],
+            mono: ['sans-serif', 'Roboto'],
+          },
+        },
+      }
+    </script>
   </head>
   <body>
     <!-- Font Family -->
+    <div class="font-sans">Tailwind is great.</div>
+    <div class="font-serif">Tailwind is great.</div>
+    <div class="font-mono text-xl">Tailwind is great.</div>
 
     <!-- Font Size -->
 
